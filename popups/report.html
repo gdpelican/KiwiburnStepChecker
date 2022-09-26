@@ -1,4 +1,4 @@
-<html style="height: 225px">
+<html style="width: 205px">
   <head>
     <style>
       h1 {
@@ -8,24 +8,30 @@
       a {
         color: #ab0332;
       }
+      p {
+        font-size: 11px;
+      }
     </style>
   </head>
   <body style="height: auto">
-    <div>
+    <div style="text-align: center">
       <div style="text-align: center; margin: 1rem 2rem">
-        <div>You're at</div>
-        <h1 style="margin: 0.5rem 0" id="stepQueue"></h1>
+        <div>You are</div>
+        <h1 id="stepQueue"></h1>
         <div>in the queue.</div>
       </div>
+      <button id="buy" style="cursor: pointer; padding: 0.5rem; margin-bottom: 1rem; border: 0; color: white; background-color: #ab0332">Buy your ticket!</button>
       <p>
-        <center>
-          You are logged in as <b id="stepEmail"></b>. <a id="logout" href="#">Log out</a>
-        </center>
+        You are logged in as
+        <br />
+        <b id="stepEmail"></b>
+        <br />
+        <a id="logout" href="#">Log out</a>
       </p>
       <p>
-        <center>
-          This number is updated about once an hour. <a id="refresh" href="#">Manually refresh now</a>
-        </center>
+        This is updated about once an hour
+        <br />
+        <a id="refresh" href="#">Refresh now</a>
       </p>
       <script type="text/javascript" src="report.js"></script>
     </div>

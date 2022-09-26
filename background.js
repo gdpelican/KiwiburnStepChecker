@@ -26,7 +26,7 @@ onChanged.addListener(({ stepRefresh }) => {
 
     // Step queue retrieved
     else if (stepSalt && stepQueue) {
-      setBadgeText({ text: stepQueue })
+      setBadgeText({ text: stepQueue > 0 ? stepQueue : '🎉🎉' })
       broadcast('clearFrame')
     }
     
