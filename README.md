@@ -11,7 +11,7 @@ https://github.com/gdpelican/KiwiburnStepChecker/zipball/main
 
     Unzip this file anwhere that's convenient on your computer
 
-3) Visit chrome://extensions in your chrome web browser, and click on 'Load Unpacked'. Select the unzipped folder.
+3) Visit `chrome://extensions` in your chrome web browser, and click on 'Load Unpacked'. Select the unzipped folder.
 
     ![](readme/extensions.png)
 
