@@ -10,7 +10,7 @@ local.get(['stepQueue']).then(({ stepQueue }) => {
 })
 
 onChanged.addListener(({ stepRefresh }) => {
-  local.get(['stepSalt', 'stepQueue']).then(({ stepSalt, stepQueue }) => {
+  local.get(['stepEmail', 'stepQueue']).then(({ stepEmail, stepQueue }) => {
     // Manual refresh
     if (stepRefresh?.newValue) {
       setBadgeText({ text: '...' })
@@ -18,20 +18,20 @@ onChanged.addListener(({ stepRefresh }) => {
     }
     
     // Logging in
-    else if (stepSalt && !stepQueue) {
+    else if (stepEmail && !stepQueue) {
       setBadgeText({ text: '...' })
       setPopup({ popup: 'popups/report.html' })
       broadcast('injectFrame')
     }
 
     // Step queue retrieved
-    else if (stepSalt && stepQueue) {
+    else if (stepEmail && stepQueue) {
       setBadgeText({ text: stepQueue > 0 ? stepQueue : '🎉🎉' })
       broadcast('clearFrame')
     }
     
     // Logging out
-    else if (!stepSalt) {
+    else if (!stepEmail) {
       setBadgeText({ text: '' })
       setPopup({ popup: 'popups/login.html' })
       broadcast('clearFrame')
@@ -40,8 +40,8 @@ onChanged.addListener(({ stepRefresh }) => {
 })
 
 onClicked.addListener(() => {
-  local.get(['stepSalt']).then(({ stepSalt }) => {
-    setPopup({ popup: `popups/${stepSalt ? 'report' : 'login'}.html` })
+  local.get(['stepEmail']).then(({ stepEmail }) => {
+    setPopup({ popup: `popups/${stepEmail ? 'report' : 'login'}.html` })
   })
 })
 

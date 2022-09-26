@@ -1,4 +1,21 @@
 <html>
+  <head>
+    <style>
+      input {
+        padding: 0.5rem;
+        border: 1px solid #777;
+        border-radius: 0.5rem;
+      }
+      input[type=submit] {
+        cursor: pointer;
+        border: 0;
+        width: 100%;
+        color: white;
+        background-color: #ab0332;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
   <body>
     <div>
       <form>
@@ -10,8 +27,8 @@
           <label for="password">Password</label>
           <input type="password" />
         </div>
-        <div style="text-align: right; margin-top: 1rem">
-          <input type="submit" value="Login to Quicket" style="cursor: pointer; padding: 0.5rem; border: 0; color: white; background-color: #ab0332" />
+        <div>
+          <input type="submit" value="Login to Quicket" />
         </div>
       </form>
       <script type="text/javascript" src="login.js"></script>

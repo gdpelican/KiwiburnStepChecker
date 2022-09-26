@@ -17,9 +17,9 @@ window.addEventListener ('load', () => {
   })
 
   // DEBUGGING
-  // chrome.storage.local.get(['stepQueue', 'stepEmail', 'stepSalt']).then(({ stepQueue, stepEmail, stepSalt }) => {
+  // chrome.storage.local.get(['stepQueue', 'stepEmail']).then(({ stepQueue, stepEmail }) => {
   //   const info = document.createElement('div')
-  //   info.innerHTML = `queue: ${stepQueue} | email: ${stepEmail} | salt: ${stepSalt}`
+  //   info.innerHTML = `queue: ${stepQueue} | email: ${stepEmail}`
   //   info.id = "stepInfo"
   //   info.style.position = 'fixed'
   //   info.style.top = 0
