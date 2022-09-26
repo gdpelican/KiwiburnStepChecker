@@ -11,9 +11,13 @@ https://github.com/gdpelican/KiwiburnStepChecker/zipball/main
 
     Unzip this file anwhere that's convenient on your computer
 
-3) Visit `chrome://extensions` in your chrome web browser, and click on 'Load Unpacked'. Select the unzipped folder.
+3) Visit `chrome://extensions` in your chrome web browser, ensure 'Developer Mode' is on, and click on 'Load Unpacked'. Select the unzipped folder.
 
     ![](readme/extensions.png)
+
+    Click on the Extensions icon and click on the pin next to the StepChecker extension.
+
+    ![](readme/pin.png)
 
     You should see a Kiwiburn icon appear on your extension bar, likely on the top right of your browser.
 
