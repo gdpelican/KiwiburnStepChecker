@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "StepChecker",
+  "name": "KiwiBurn STEP Checker",
   "description": "Display your STEP queue number for KiwiBurn",
   "version": "1.0",
   "background": {
