@@ -17,15 +17,18 @@ https://github.com/gdpelican/KiwiburnStepChecker/zipball/main
 
     You should see a Kiwiburn icon appear on your extension bar, likely on the top right of your browser.
 
-4) Enter your credentials for Quicket into the login form
+4) **!! Important !!** Open a new web page (can be anything!). The initial load won't work while you're still viewing the Extensions page.
+
+
+5) Enter your credentials for Quicket into the login form
 
     ![](readme/login.png)
 
-5) Voila! You should now see your status in the STEP queue from the comfort of anywhere on the internet!
+6) Voila! You should now see your status in the STEP queue from the comfort of anywhere on the internet!
 
     ![](readme/queue.png)
 
-6) If you're one of the lucky ones who end up making it to the top of the queue, you'll see a 'Buy Ticket' link which will take you directly to Quicket's site to purchase your ticket.
+7) If you're one of the lucky ones who end up making it to the top of the queue, you'll see a 'Buy Ticket' link which will take you directly to Quicket's site to purchase your ticket.
 
     ![](readme/buy.png)
 
@@ -33,6 +36,7 @@ https://github.com/gdpelican/KiwiburnStepChecker/zipball/main
 
 The STEP queue will update approximately once an hour, and each time you re-open your browser. If it's causing trouble for any reason, or you want to know the absolute latest number you can also manually refresh by clicking 'Refresh now' in the extension popup.
 
+If the number isn't loading immediately, try opening a new page and navigating to a web page (can be anything that starts with `https`), then clicking on the 'Refresh now' button.
 
 ## Security
 
