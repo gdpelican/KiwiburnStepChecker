@@ -5,7 +5,7 @@ const {
 
 local.get(['stepEmail', 'stepQueue'], ({ stepEmail = '', stepQueue = '' }) => {
   document.querySelector('#stepEmail').innerHTML = stepEmail
-  document.querySelector('#stepQueue').innerHTML = stepQueue
+  document.querySelector('#stepQueue').innerHTML = 0
 
   if (stepQueue > 0) {
     document.querySelector('#buy').style.display = 'none'
