@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "StepChecker",
+  "description": "Display your STEP queue number for KiwiBurn",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png"
+  },
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://*.quicket.com/account/authentication/login*"],
+      "all_frames": true,
+      "js": ["quicket/login.js"]
+    },
+    {
+      "matches": ["https://*.quicket.com/account/events/175558/step/buy*"],
+      "all_frames": true,
+      "js": ["quicket/update.js"]
+    },
+    {
+      "matches":  ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab", "storage"]
+}
